@@ -1,0 +1,38 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "parserOptions": {
+      "tsconfigRootDir": "./",
+      "project": ["./tsconfig.json"]
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      // "plugin:react/recommended",
+      // "plugin:react-hooks/recommended",
+      // "@typescript-eslint/recommended-requiring-type-checking",
+      // "airbnb-typescript",
+      "prettier/@typescript-eslint"
+      // "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "semi": "off",
+      "no-explicit-any": "off",
+      "no-underscore-dangle": "off",
+      "no-fallthrough": "off",
+      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+      "react/prop-types": "off",
+      "consistent-return": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-this-alias": "warn",
+      "@typescript-eslint/ban-types": "warn",
+      "prefer-rest-params": "warn",
+      "no-empty": "off"
+    }
+  }
