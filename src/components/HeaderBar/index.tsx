@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 
 interface CProps {
   mode?: string
@@ -7,9 +8,8 @@ interface CProps {
 export const HeaderBar: React.FC<CProps> = props => {
   const { mode = 'homepage' } = props
   return (
-    <>
-      <div>HeaderBar</div>
-      <div>mode: {mode}</div>
-    </>
+    <div className="head-bar">
+      <div>HeaderBar mode: {mode}</div>
+    </div>
   )
 }
