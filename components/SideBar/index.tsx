@@ -7,7 +7,7 @@ import css from 'styled-jsx/css'
 export default function SideBar() {
   /** -------- States * Const -------- */
   const [isExpand, setExpand] = useState(true)
-  // commit test
+
   /** -------- Handlers -------- */
   const toggleExpand = () => {
     setExpand(!isExpand)
@@ -34,8 +34,8 @@ const styles = css`
     top: 0;
     bottom: 0;
     width: 300px;
-    background-color: lightgray;
-    transition: left 0.3s ease;
+    background-color: #f5f2f0;
+    transition: left 0.2s ease;
   }
   .toggle-controller {
     padding: 10px;
@@ -46,13 +46,15 @@ const styles = css`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000;
     width: 30px;
     height: 30px;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     cursor: pointer;
   }
+
   .collapsed {
     left: -250px;
+    background-color: transparent;
   }
 `
