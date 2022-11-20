@@ -3,6 +3,8 @@
  */
 import { useState } from 'react'
 import css from 'styled-jsx/css'
+import TreeMenu from '../TreeMenu'
+import { SideBarMenu } from '../TreeMenu/config'
 
 export default function SideBar() {
   /** -------- States * Const -------- */
@@ -12,7 +14,6 @@ export default function SideBar() {
   const toggleExpand = () => {
     setExpand(!isExpand)
   }
-
   return (
     <aside className={`side-bar ${isExpand ? '' : 'collapsed'}`}>
       <header />
@@ -20,6 +21,9 @@ export default function SideBar() {
         <div className="toggle-controller" onClick={toggleExpand}>
           <div className="toggle-icon">{isExpand ? '<' : '>'}</div>
         </div>
+      </section>
+      <section>
+        <TreeMenu list={SideBarMenu} level={1} />
       </section>
       <footer />
       <style jsx>{styles}</style>
