@@ -7,7 +7,7 @@ import css from 'styled-jsx/css'
 export default function SideBar() {
   /** -------- States * Const -------- */
   const [isExpand, setExpand] = useState(true)
-
+  // commit test
   /** -------- Handlers -------- */
   const toggleExpand = () => {
     setExpand(!isExpand)
