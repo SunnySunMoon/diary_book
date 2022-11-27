@@ -1,19 +1,19 @@
 /**
  * Home side bar, navigator
  */
-import { useState } from 'react'
-import css from 'styled-jsx/css'
-import TreeMenu from '../TreeMenu'
-import { SideBarMenu } from '../TreeMenu/config'
+import { useState } from 'react';
+import css from 'styled-jsx/css';
+import TreeMenu from '../TreeMenu';
+import { SideBarMenu } from '../TreeMenu/config';
 
 export default function SideBar() {
   /** -------- States * Const -------- */
-  const [isExpand, setExpand] = useState(true)
+  const [isExpand, setExpand] = useState(true);
 
   /** -------- Handlers -------- */
   const toggleExpand = () => {
-    setExpand(!isExpand)
-  }
+    setExpand(!isExpand);
+  };
   return (
     <aside className={`side-bar ${isExpand ? '' : 'collapsed'}`}>
       <header />
@@ -28,7 +28,7 @@ export default function SideBar() {
       <footer />
       <style jsx>{styles}</style>
     </aside>
-  )
+  );
 }
 
 const styles = css`
@@ -61,4 +61,4 @@ const styles = css`
     left: -250px;
     background-color: transparent;
   }
-`
+`;
