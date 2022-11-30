@@ -26,6 +26,6 @@ export const MockRecordList: RecordItem[] = [
     lastModifedTime: 1669532206356,
     labels: ['entertain', 'plays', 'cartoon'],
     isFinish: false,
-    quadrant: QuadrantEnum.UrgentAndImportant
+    quadrant: QuadrantEnum.NotUrgentAndUnimportant
   },
 ]
